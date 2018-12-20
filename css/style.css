@@ -1,0 +1,905 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body {
+    -webkit-touch-callout: none ;
+    -webkit-text-size-adjust: none ; -ms-text-size-adjust: none ;
+    -webkit-user-select: none ; -moz-user-select: none ; -ms-user-select: none ; user-select: none ;
+    -webkit-highlight: none ;
+    -webkit-tap-highlight-color: rgba(0,0,0,0) ;
+    -webkit-tap-highlight-color: transparent ;      /* For some Androids */
+}
+
+
+html {
+    -ms-touch-action: pan-x ;
+}
+
+body {
+    -ms-touch-action: pan-y ;
+    -ms-content-zooming: none ;
+}
+
+input, textarea  {
+    -webkit-user-select: text ; -moz-user-select: text ; -ms-user-select: text ; user-select: text ;
+}
+
+body {
+    background: white ;
+    color: black ;
+}
+
+#splash{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	background-image: url("../assets/splash.png");
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1;
+    font-family: 'Raleway';
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+#Telalogin{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	background-image: url("../assets/login.png");
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+	background-position: center center;
+}
+
+#TelaCadastro{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	background-image: url("../assets/cadastro.png");
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#telaInicial{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 93vh;
+	position: fixed;
+	background-image: url("../assets/tela-branca-total.png");
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#TelaGlossario{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	background-image: url("../assets/glossario.png");
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#TelaDadosPlanta{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 93vh;
+	position: fixed;
+	background-image: url("../assets/tela-glossario.png");
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#TelaCaracPlanta{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	background-image: url("../assets/tela-branca-total.png");
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: 0;
+    overflow: auto;
+}
+
+#TelaPlantas{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	background-image: url("../assets/tela-branca-total.png");
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: auto;
+}
+
+#TelaEsqueciSenha{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	background-image: url("../assets/esqueci-senha-sem-texto.png");
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#telaControle{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 93vh;
+	position: fixed;
+	background-image: url("../assets/tela-branca-total.png");
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: scroll;
+    z-index: 0;
+}
+
+
+#txtEmail
+{
+	top: 47.1%;
+	left: 23%;
+	width: 65%;
+	height: 5vh;
+	z-index: 2;
+	font-size: 100%;
+	font-weight: bold;
+	color: white;
+	position:fixed;
+	background-color: transparent;
+	border: transparent;
+}
+
+#txtSenha
+{
+	top: 57.4%;
+	left: 23%;
+	width: 65%;
+	height: 5vh;
+	z-index: 2;
+	font-size: 100%;
+	font-weight: bold;
+	color: white;
+	position:fixed;
+	background-color: transparent;
+	border: transparent;
+}
+
+#btnCadastrar
+{
+	width: 41%;
+	height: 10vh;
+	top: 68%;
+	left: 8%;
+	z-index: 1;
+	position:fixed;
+}
+
+#btnEntrar
+{
+	background:  url("../assets/botao-cadastro.png") no-repeat;
+	background-size: contain;
+	border: none;
+	width: 41%;
+	height: 10vh;
+	top: 68%;
+	left: 51%;
+	z-index: 1;
+	position:fixed;
+}
+
+.txtEntrar{
+    font-size: 20px;
+    color: #3ccad0;
+}
+
+#btnEsqueciSenha
+{
+	width: 20%;
+	height: 2vh;
+	top: 94.5%;
+	left: 55%;
+	z-index: 1;
+	position:fixed;
+}
+
+#btnEntrarCadastro
+{
+	width: 10%;
+	height: 2vh;
+	top: 94.5%;
+	left: 60%;
+	z-index: 1;
+	position:fixed;
+}
+
+
+
+#btnCadastraBanco
+{
+	background:  url("../assets/botao-cadastro.png") no-repeat;
+	background-size: contain;
+	width: 41%;
+	height: 10vh;
+	top: 78%;
+	left: 28%;
+	z-index: 1;
+	position:fixed;	
+	border: none;
+
+}
+
+
+#txtNomeCadastro
+{
+	top: 28.5%;
+	left: 23%;
+	width: 65%;
+	height: 5vh;
+	z-index: 2;
+	font-size: 100%;
+	font-weight: bold;
+	color: white;
+	position:fixed;
+	background-color: transparent;
+	border: transparent;
+}
+
+#txtEmailCadastro
+{
+	top: 40.5%;
+	left: 23%;
+	width: 65%;
+	height: 5vh;
+	z-index: 2;
+	font-size: 100%;
+	font-weight: bold;
+	color: white;
+	position:fixed;
+	background-color: transparent;
+	border: transparent;
+}
+
+#txtSenhaCadastro
+{
+	top: 53%;
+	left: 23%;
+	width: 65%;
+	height: 5vh;
+	z-index: 2;
+	font-size: 100%;
+	font-weight: bold;
+	color: white;
+	position:fixed;
+	background-color: transparent;
+	border: transparent;
+}
+
+#txtRepeteSenha
+{
+	top: 66%;
+	left: 23%;
+	width: 65%;
+	height: 5vh;
+	z-index: 2;
+	font-size: 100%;
+	font-weight: bold;
+	color: white;
+	position:fixed;
+	background-color: transparent;
+	border: transparent;
+}
+
+#btnPlanta1
+{
+	width: 86%;
+	height: 18vh;
+	top: 4%;
+	left: 7%;
+	z-index: 1;
+	position:fixed;
+}
+
+#btnPlanta2
+{
+	width: 86%;
+	height: 18vh;
+	top: 25%;
+	left: 7%;
+	z-index: 1;
+	position:fixed;
+}
+
+
+#btnPlanta3
+{
+	width: 86%;
+	height: 18vh;
+	top: 46%;
+	left: 7%;
+	z-index: 1;
+	position:fixed;
+}
+
+
+#btnPlanta4
+{
+	width: 86%;
+	height: 18vh;
+	top: 66.5%;
+	left: 7%;
+	z-index: 1;
+	position:fixed;
+}
+
+
+.btnBase1
+{
+	width: 24.5%;
+	height: 12vh;
+	top: 89.5%;
+	left: 0%;
+	z-index: 1;
+	position:fixed;
+	color: #3ccad0;
+	text-align: center;
+	padding-top: 25px;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-family: 'Raleway';
+	font-weight: bold;
+}
+
+.btnBase2
+{
+	width: 24.5%;
+	height: 12vh;
+	top: 89.5%;
+	left: 25.9%;
+	z-index: 1;
+	position:fixed;
+	color: #3ccad0;
+	text-align: center;
+	padding-top: 25px;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-family: 'Raleway';
+	font-weight: bold;
+}
+
+.btnBase3
+{
+	width: 24.5%;
+	height: 12vh;
+	top: 89.5%;
+	left: 51.6%;
+	z-index: 1;
+	position:fixed;
+	color: #3ccad0;
+	text-align: center;
+	padding-top: 25px;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-family: 'Raleway';
+	font-weight: bold;
+}
+
+.btnBase4
+{
+	width: 24.5%;
+	height: 12vh;
+	top: 89.5%;
+	left: 77%;
+	z-index: 1;
+	position:fixed;
+	color: #3ccad0;
+	text-align: center;
+	padding-top: 25px;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-family: 'Raleway';
+	font-weight: bold;
+}
+
+#txtNomePlanta
+{
+	top: 5%;
+	left: 10.5%;
+	width: 80%;
+	height: 4vh;
+	z-index: 2;
+	font-size: 100%;
+	font-weight: lighter;
+	color: white;
+	position:fixed;
+	background-color: transparent;
+	border: transparent;
+	font-size: 14px;
+}
+
+#txtPesquisaPlanta
+{
+	top: 5%;
+    left: 9%;
+    width: 80%;
+    height: 4vh;
+    z-index: 2;
+    font-size: 100%;
+    font-weight: lighter;
+    color: white;
+    position: fixed;
+	background: #16806b;
+    opacity: 0.75;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+#txtEmailSenha
+{
+	top: 36.6%;
+	left: 21%;
+	width: 70%;
+	height: 4vh;
+	z-index: 2;
+	font-size: 100%;
+	font-weight: bold;
+	color: white;
+	position:fixed;
+	background-color: transparent;
+	border: transparent;
+}
+
+#txtSenhaSenha
+{
+	top: 50%;
+	left: 21%;
+	width: 70%;
+	height: 4vh;
+	z-index: 2;
+	font-size: 100%;
+	font-weight: bold;
+	color: white;
+	position:fixed;
+	background-color: transparent;
+	border: transparent;
+}
+
+#txtRepeteSenhaSenha
+{
+	top: 63.4%;
+	left: 21%;
+	width: 70%;
+	height: 4vh;
+	z-index: 2;
+	font-size: 100%;
+	font-weight: bold;
+	color: white;
+	position:fixed;
+	background-color: transparent;
+	border: transparent;
+}
+
+
+#btnMudarSenha
+{
+	background:  url("../assets/botao-cadastro.png") no-repeat;
+	background-size: contain;
+	width: 41%;
+	height: 10vh;
+	top: 78%;
+	left: 28%;
+	z-index: 1;
+	position: fixed;
+	border: none;
+
+}
+
+
+#boxPlanta1{
+	background:  url("../assets/sombra-interrogacao.png");
+	top: 3%;
+	left: 4%;
+	width: 92%;
+	height: 16.5vh;
+	z-index: 1;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+
+#boxPlanta2{
+	background:  url("../assets/sombra-interrogacao.png");
+	top: 22%;
+	left: 4%;
+	width: 92%;
+	height: 16.5vh;
+	z-index: 1;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+
+#boxPlanta3{
+	background:  url("../assets/sombra-interrogacao.png");
+	top: 41%;
+	left: 4%;
+	width: 92%;
+	height: 16.5vh;
+	z-index: 1;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+
+#boxPlanta4{
+    background: url(../assets/sombra-interrogacao.png);
+    top: 60%;
+    left: 4%;
+    width: 92%;
+    height: 16.5vh;
+    z-index: 1;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+#boxPlanta5{
+    background: url(../assets/sombra-interrogacao.png);
+    top: 79%;
+    left: 4%;
+    width: 92%;
+    height: 16.5vh;
+    z-index: 1;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+#boxPlanta6{
+    background: url(../assets/sombra-interrogacao.png);
+    top: 98%;
+    left: 4%;
+    width: 92%;
+    height: 16.5vh;
+    z-index: 1;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+#boxPlanta7{
+	background:  url("../assets/sombra-interrogacao.png");
+	top: 117%;
+	left: 4%;
+	width: 92%;
+	height: 16.5vh;
+	z-index: 1;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+
+#boxPlanta8{
+	background:  url("../assets/sombra-interrogacao.png");
+	top: 136%;
+	left: 4%;
+	width: 92%;
+	height: 16.5vh;
+	z-index: 1;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+
+#boxPlanta9{
+	background:  url("../assets/sombra-interrogacao.png");
+	top: 155%;
+	left: 4%;
+	width: 92%;
+	height: 16.5vh;
+	z-index: 1;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+
+#boxPlanta10{
+	background:  url("../assets/sombra-interrogacao.png");
+	top: 174%;
+	left: 4%;
+	width: 92%;
+	height: 16.5vh;
+	z-index: 1;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+
+#boxPlanta11{
+	background:  url("../assets/sombra-interrogacao.png");
+	top: 193%;
+	left: 4%;
+	width: 92%;
+	height: 16.5vh;
+	z-index: 1;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+
+#boxPlanta12{
+	background:  url("../assets/sombra-interrogacao.png");
+	top: 212%;
+	left: 4%;
+	width: 92%;
+	height: 16.5vh;
+	z-index: 1;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+
+#boxPlanta13{
+	background:  url("../assets/sombra-interrogacao.png");
+	top: 231%;
+	left: 4%;
+	width: 92%;
+	height: 16.5vh;
+	z-index: 1;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+
+#boxPlanta14{
+	background:  url("../assets/sombra-interrogacao.png");
+	top: 250%;
+	left: 4%;
+	width: 92%;
+	height: 16.5vh;
+	z-index: 1;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	margin-bottom: 80px;
+}
+
+.tituloPlanta{
+	font-family: 'Raleway';
+	font-size: 30px;
+	font-weight: 700;
+	color: #1f3d35;
+	top: 40%;
+	letter-spacing: 2px;
+	padding-left: 6%;
+	padding-top: 10px;
+}
+
+.tempoColheita{
+	color: white;
+	font-size: 12px;
+	font-family: 'Raleway';
+	letter-spacing: .1em;
+	padding-left: 7%;
+}
+
+.tituloDadosPlanta{
+	background: #343434;
+	/* height: 10vh; */
+	width: 98.5%;
+	left:0%;
+	top:0%;
+    color: white;
+    font-family: 'Raleway';
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 0px;
+    text-align: center;
+    z-index: 1;
+    padding: 10px;
+    font-size: 28px;
+}
+
+.caracteristicas{
+	background: #16806b;
+    opacity: 0.75;
+    margin: 0 3%;
+    padding: 5px;
+    font-family: 'Raleway';
+    margin-bottom: 20px;
+}
+
+.tituloBox1{
+	text-align: center;
+    font-size: 26px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.listaCaracteristicas{
+	color: white;
+    font-size: 17px;
+    list-style-type: none;
+    line-height: 1.3em;
+    padding-right: 40px;
+}
+
+.footer{
+	background: #434;
+    width: 100%;
+    top: 100%;
+    height: 10vh;
+    position: sticky;
+}
+
+.botoesFooter li{
+	padding:25px 46px 25px 25px;
+    font-family: 'Raleway';
+    font-size: 22px;
+    color: #3ccad0;
+    top:90%;
+    width: 100%;
+    height: 7vh;
+    position: relative;
+}
+
+.btnCaracPlantas{
+    height: 40%;
+    width: 10%;
+    position: absolute;
+    left: 85.5%;
+    top: 16%;
+    border-radius: 20px;
+}
+
+.footerBotao{
+	align-items: center;
+	top:100%;
+    width: 100%;
+    height: 7vh;
+	padding: 0;
+	font-family: 'Raleway';
+    font-size: 16px;
+    color: #3ccad0;
+}
+
+.footerBotao li {
+	flex: 1;
+	/* border-right: 2px solid white; */
+	text-align: center;
+}
+
+.footerBotao li:nth-child(2){
+    border-right: 2px;
+    border-width: 5px;
+    border-color: white;
+    border-radius: 5px;
+}
+
+.line{
+width: 10%
+height: 15%;
+top:10%;
+left:25%;
+border-left: 5px solid black;
+position: relative;
+}
+
+.Espaços{
+	background: #16806b;
+    opacity: 0.75;
+    /* margin: 0 3%; */
+    padding: 5px;
+    font-family: 'Raleway';
+    margin-bottom: 20px;
+    margin: 26px 7% 20px 7%;
+    height: 16%;
+    border-radius: 20px;
+}
+
+.Espaços h2{
+	color: white;
+	margin-top: 2px;
+	text-align: center;
+	font-size: 20px;
+	letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-bottom: 8px;
+}
+
+.plantaPuxada{
+	font-size: 20px;
+    color: black;
+    margin: 0;
+    text-align: center;
+    margin-top: -20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.dadosExibidos{
+	list-style: none;
+    display: inline-flex;
+    margin-top: 10px;
+    margin: 0;
+    padding-left: 38%;
+}
+
+.ImagemEspaço{
+    background-repeat: no-repeat;
+    background-image: url("../assets/quadrado-espaço1.png");"
+    width: 50px;
+    height: 50px;
+}
+
+.temperaturaEstufa{
+	font-size: 20px;
+    color: black;
+}
+
+#humidade1{
+	font-size: 20px;
+    color: black;
+    position: relative;
+    top:50%;
+}
+
+#humidade2{
+	font-size: 20px;
+    color: black;
+}
+
+#humidade3{
+	font-size: 20px;
+    color: black;
+}
+
+#humidade4{
+	font-size: 20px;
+    color: black;
+}
+
+#tempoColheita1{
+	font-size: 20px;
+    color: black;
+}
+
+#tempoColheita2{
+	font-size: 20px;
+    color: black;	
+}
+
+#tempoColheita3{
+	font-size: 20px;
+    color: black;	
+}
+
+#tempoColheita4{
+	font-size: 20px;
+    color: black;
+}
