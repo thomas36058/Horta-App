@@ -13,8 +13,7 @@ To open the project, follow the steps bellow:
   5. Press Ctrl+Shift+I
   6. Press Ctrl+Shift+M to see as mobile view
   
-  **Test user
-  Login: admin
-  Password: admin**
+  **Test user**
+  Login: admin  Password: admin
   
 
